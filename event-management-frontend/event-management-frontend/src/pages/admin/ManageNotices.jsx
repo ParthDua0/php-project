@@ -10,10 +10,10 @@ const ManageNotices = () => {
   return (
     <div className="flex min-h-screen flex-col bg-[#f2f2f2]">
 
-      {/* 🔥 Navbar */}
+      {/*Navbar */}
       <Navbar />
 
-      {/* 🔥 Main Content */}
+      {/*Main Content */}
       <main className="mx-auto w-full max-w-7xl grow px-4 py-6 sm:px-6 sm:py-8">
 
         <button
@@ -34,7 +34,7 @@ const ManageNotices = () => {
 
       </main>
 
-      {/* 🔥 Footer */}
+      {/*Footer */}
       <Footer />
 
     </div>

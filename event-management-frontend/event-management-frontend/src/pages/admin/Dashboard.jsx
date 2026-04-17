@@ -17,7 +17,7 @@ const Dashboard = () => {
 
       <Navbar />
 
-      {/* 🔥 MAIN */}
+      {/*MAIN */}
       <main className="mx-auto w-full max-w-7xl grow px-4 py-8 sm:px-6 sm:py-10">
 
         {/* HEADER */}
@@ -31,7 +31,7 @@ const Dashboard = () => {
           </p>
         </div>
 
-        {/* 🔥 ACTION CARDS */}
+        {/* ACTION SECTION */}
         <div className="grid gap-6 sm:grid-cols-2">
 
           {/* EVENTS CARD */}

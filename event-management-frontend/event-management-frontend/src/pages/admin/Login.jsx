@@ -25,7 +25,7 @@ const Login = () => {
 
       await API.post("?route=login", form);
 
-      // 🔥 confirm session properly
+      // confirm session properly
       await API.get("?route=check-auth");
 
       login();
@@ -41,10 +41,10 @@ const Login = () => {
   return (
     <div className="flex min-h-screen flex-col bg-[#f2f2f2]">
 
-      {/* 🔥 Navbar */}
+      {/* Navbar */}
       <Navbar />
 
-      {/* 🔥 Centered Login Form */}
+      {/* Centered Login Form */}
       <main className="flex grow items-center justify-center px-4 py-6 sm:py-10">
 
         <form
@@ -85,7 +85,7 @@ const Login = () => {
 
       </main>
 
-      {/* 🔥 Footer */}
+      {/* Footer */}
       <Footer />
 
     </div>
