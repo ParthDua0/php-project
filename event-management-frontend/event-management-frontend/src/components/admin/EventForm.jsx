@@ -25,7 +25,7 @@ const EventForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-3 rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-100"
+      className="space-y-3 rounded-lg bg-white p-4 shadow-sm ring-1 ring-gray-100 sm:p-6"
     >
       <h2 className="text-xl font-semibold text-[#2f2f2f]">Create Event</h2>
 

@@ -19,7 +19,7 @@ const NoticeForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex gap-2 rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-100"
+      className="flex flex-col gap-2 rounded-lg bg-white p-4 shadow-sm ring-1 ring-gray-100 sm:flex-row sm:p-6"
     >
       <input
         className="flex-1 rounded border border-[#d9d9df] p-2.5 outline-none focus:border-[#6c1d4f]"
@@ -28,7 +28,7 @@ const NoticeForm = () => {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      <button className="rounded bg-[#6c1d4f] px-4 text-white transition hover:bg-[#581940]">
+      <button className="rounded bg-[#6c1d4f] px-4 py-2 text-white transition hover:bg-[#581940]">
         Add
       </button>
     </form>

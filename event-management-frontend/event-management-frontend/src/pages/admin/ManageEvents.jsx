@@ -14,7 +14,7 @@ const ManageEvents = () => {
       <Navbar />
 
       {/* 🔥 Main Content */}
-      <main className="mx-auto w-full max-w-7xl grow px-6 py-8">
+      <main className="mx-auto w-full max-w-7xl grow px-4 py-6 sm:px-6 sm:py-8">
 
         <button
           onClick={() => navigate("/admin/dashboard")}
@@ -23,7 +23,7 @@ const ManageEvents = () => {
           ← Back
         </button>
 
-        <h1 className="mb-6 text-3xl font-bold text-[#2f2f2f]">
+        <h1 className="mb-6 text-2xl font-bold text-[#2f2f2f] sm:text-3xl">
           Manage Events
         </h1>
 

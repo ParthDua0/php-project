@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mt-10">
       <div className="bg-[#6c1d4f] py-3">
-        <div className="mx-auto flex max-w-7xl justify-center gap-6 text-sm font-semibold text-white">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 text-xs font-semibold text-white sm:gap-6 sm:text-sm">
           <NavLink to="mailto:info@gbu.ac.in">Email</NavLink>
           <NavLink to="">Facebook</NavLink>
           <NavLink to="">Twitter</NavLink>
@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#efeff1] px-6 py-10 text-[#2f2f2f]">
+      <div className="bg-[#efeff1] px-4 py-8 text-[#2f2f2f] sm:px-6 sm:py-10">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
           <div>
             <h3 className="mb-3 text-lg font-semibold">Gautam Buddha University</h3>

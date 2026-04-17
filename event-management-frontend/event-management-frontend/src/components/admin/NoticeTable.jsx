@@ -24,7 +24,7 @@ const NoticeTable = () => {
   };
 
   return (
-    <section className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-100">
+    <section className="rounded-lg bg-white p-4 shadow-sm ring-1 ring-gray-100 sm:p-6">
       <h2 className="mb-4 text-xl font-semibold text-[#2f2f2f]">All Notices</h2>
 
       {notices.length === 0 ? (
@@ -33,9 +33,9 @@ const NoticeTable = () => {
         notices.map(n => (
           <div
             key={n.id}
-            className="mb-2 flex items-center justify-between rounded border border-[#edd9e8] bg-[#faf4f8] p-3"
+            className="mb-2 flex flex-col items-start gap-2 rounded border border-[#edd9e8] bg-[#faf4f8] p-3 sm:flex-row sm:items-center sm:justify-between"
           >
-            <span className="font-medium text-[#6c1d4f]">{n.title}</span>
+            <span className="font-medium text-[#6c1d4f] wrap-break-word">{n.title}</span>
 
             <button
               onClick={() => deleteNotice(n.id)}

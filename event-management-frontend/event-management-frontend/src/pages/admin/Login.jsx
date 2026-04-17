@@ -45,11 +45,11 @@ const Login = () => {
       <Navbar />
 
       {/* 🔥 Centered Login Form */}
-      <main className="flex grow items-center justify-center px-4">
+      <main className="flex grow items-center justify-center px-4 py-6 sm:py-10">
 
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-sm rounded bg-white p-6 shadow"
+          className="w-full max-w-sm rounded bg-white p-5 shadow sm:p-6"
         >
           <h2 className="mb-4 text-xl font-bold text-center">
             Admin Login

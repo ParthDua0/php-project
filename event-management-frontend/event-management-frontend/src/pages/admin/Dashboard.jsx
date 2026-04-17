@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (!isAdmin) navigate("/admin/login");
-  }, [isAdmin]);
+  }, [isAdmin, navigate]);
 
   return (
     <div className="flex min-h-screen flex-col bg-[#f2f2f2]">
@@ -18,11 +18,11 @@ const Dashboard = () => {
       <Navbar />
 
       {/* 🔥 MAIN */}
-      <main className="mx-auto w-full max-w-7xl grow px-6 py-10">
+      <main className="mx-auto w-full max-w-7xl grow px-4 py-8 sm:px-6 sm:py-10">
 
         {/* HEADER */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-[#2f2f2f]">
+          <h1 className="text-2xl font-bold text-[#2f2f2f] sm:text-3xl">
             Admin Dashboard
           </h1>
 

@@ -53,12 +53,12 @@ const Home = () => {
     <div className="flex min-h-screen flex-col bg-[#f2f2f2]">
       <Navbar />
 
-      <main className="mx-auto w-full max-w-7xl grow px-6 py-8">
-        <h1 className="mb-8 text-center text-4xl font-bold text-[#2f2f2f]">
+      <main className="mx-auto w-full max-w-7xl grow px-4 py-6 sm:px-6 sm:py-8">
+        <h1 className="mb-6 text-center text-2xl font-bold text-[#2f2f2f] sm:mb-8 sm:text-4xl">
           Important Links
         </h1>
 
-        <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-8 grid gap-3 sm:mb-10 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {links.map((link) => (
             <NavButton key={link.name} link={link} />
           ))}
