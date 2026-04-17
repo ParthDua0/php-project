@@ -6,7 +6,7 @@ require_once __DIR__ . '/../utils/response.php';
 
 class AuthController {
 
-    // 🔥 COMMON SESSION CONFIG (reuse everywhere)
+    // COMMON SESSION CONFIG (reuse everywhere)
     private function startSession() {
         if (session_status() === PHP_SESSION_NONE) {
             session_set_cookie_params([
@@ -22,7 +22,7 @@ class AuthController {
         }
     }
 
-    // 🔐 LOGIN
+    // LOGIN
     public function login() {
         $this->startSession();
 
@@ -47,7 +47,7 @@ class AuthController {
         }
     }
 
-    // 🔍 CHECK SESSION
+    // CHECK SESSION
     public function checkSession() {
         $this->startSession();
 
@@ -64,7 +64,7 @@ class AuthController {
         }
     }
 
-    // 🚪 LOGOUT
+    // LOGOUT
     public function logout() {
         $this->startSession();
 
@@ -74,7 +74,7 @@ class AuthController {
         // destroy session
         session_destroy();
 
-        // 🔥 delete session cookie manually
+        // delete session cookie manually
         if (ini_get("session.use_cookies")) {
             $params = session_get_cookie_params();
 

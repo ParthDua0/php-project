@@ -6,14 +6,14 @@ require_once __DIR__ . '/../utils/response.php';
 
 class NoticeController {
 
-    // 🔹 GET all notices
+    // GET all notices
     public function getNotices() {
         $db = (new Database())->connect();
         $notices = Notice::getAll($db);
         jsonResponse($notices);
     }
 
-    // 🔹 CREATE notice
+    // CREATE notice
     public function createNotice() {
         $db = (new Database())->connect();
         $data = json_decode(file_get_contents("php://input"));
@@ -30,7 +30,7 @@ class NoticeController {
         ]);
     }
 
-    // 🔹 UPDATE notice
+    // UPDATE notice
     public function updateNotice($id) {
         $db = (new Database())->connect();
         $data = json_decode(file_get_contents("php://input"));
@@ -47,7 +47,7 @@ class NoticeController {
         ]);
     }
 
-    // 🔹 DELETE notice
+    // DELETE notice
     public function deleteNotice($id) {
         $db = (new Database())->connect();
 
