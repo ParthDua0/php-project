@@ -4,7 +4,7 @@ import EventList from "../../components/events/EventList";
 import Notices from "../../components/events/Notices";
 import { Link } from "react-router-dom";
 
-// 🔥 Reusable Link/Button Component
+// Reusable Link/Button Component
 const NavButton = ({ link }) => {
   const baseClass =
     "rounded-md bg-[#b777a5] px-4 py-3 text-sm font-semibold text-white text-center shadow-sm transition hover:bg-[#9f648f]";
